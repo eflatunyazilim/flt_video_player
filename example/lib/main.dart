@@ -13,7 +13,7 @@ class _MyAppState extends State<MyApp> {
   VideoPlayerController controller;
   bool _showOverlay = false;
   Timer _timer;
-  final String title = "播放器播放测试标题";
+  final String title = "asd";
 
   VoidCallback _listener;
 
@@ -25,7 +25,8 @@ class _MyAppState extends State<MyApp> {
     //https://look.chinahrt.com.cn//courseyun/rx/topic/video/170508/149421376907147ae58ea-09f2-4b7c-a22c-11567a5ae96b.mp4
     //https://www.sample-videos.com/index.php#sample-mp4-video
     controller = VideoPlayerController.path(
-        "http://vfx.mtime.cn/Video/2019/03/21/mp4/190321153853126488.mp4")
+        'http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4'
+    )
       ..initialize();
 
     _listener = () {
@@ -140,7 +141,7 @@ class _MyAppState extends State<MyApp> {
             child: Padding(
               padding: EdgeInsets.all(2.0),
               child: Text(
-                "倍速",
+                "rate",
                 style: TextStyle(color: Colors.white),
               ),
             ),
